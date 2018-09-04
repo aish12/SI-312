@@ -1,4 +1,7 @@
 -Master Calendar
+	You can use google calendar or another app like Classic Timetable/Timetable or
+	MyStudyLife to store your schedule
+
 	- put in all exams,  quizzes, and assignments for this class and for other classes
 	- schedule time to work on your assignments.  (they shouldn't take more than 10 hours for most)
 	- schedule time on your schedule to attend @ least 2 office hours/week (note that offices
@@ -11,4 +14,30 @@
 - Build study groups of 2 different sets of people.
 
 Tools to stay on task:
+These tools do things like reward you points for not being on your phone in class, and give you other
+incentives to stay focused. 
+- PocketPoints: app where you can get free stuff/discounts for staying off your phone during class
+- Forest: useful when studying. Grows a tree while you keep off your phone. if you use your phone, the tree dies.  
+- Distraction Blockers on the internet such as Self-Control, StayFocused, FocusBooster
 
+
+Some Study Techniques
+These are not one size fits all. Some of these strategies may work from you, and some may not. 
+Feel free to try multiple and see what's effective for your study style. 
+
+- Focus on a task for 25 minutes then take a 5 minute break (Pomodoro Technique)
+- If you're having a hard time starting on a task, spend 10 minutes working on a task, then decide
+	if you want to continue working or not. Most of the time, you'll continue working
+- Set a goal to complete 80% of your task, not the entire thing
+- Set a SMART goal for the week. Smart stands for Specific, Measurable, Actionable, Realistic, Time-Bound. 
+	Make sure you describe your goal, you can measure if you succeeded/the degree to which you succeeded, 
+	you must complete an action or set of actions to accomplish the goal, the goal is feasable to accomplish, 
+	and you set a time period to complete the goal
+	These can last for a day, a week, a month, a semester, or longer depending on the nature of the goal. 
+	For example: "I want to study 4 times a week, for an hour, for the next month in order to get an A on my final 
+	on December 14th."
+	"Tonight, I will work on Chemistry for 2 hours to finish my homework, take a dinner break, then work on my CS312 Assignment for
+	2 hours."
+	A goal like "I want to get an A in CS312" doesn't tell you what you need to do to achieve the goal. 
+	
+If you want more study techniques, email me and I'm happy to help!
