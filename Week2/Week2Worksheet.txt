@@ -1,0 +1,25 @@
+1.	What is the purpose of methods?
+2.	Is there any downside to putting everything in main vs. using methods? Explain your reasoning.
+3.	Which of the following method names are valid
+  a.	I_Ate_Some_Pie
+  b.	I-Ate-Some-Pie
+  c.	1AteSomePie
+  d.	_IAteSomePie
+  e.	void
+  f.	publicStaticVoidMain
+  g.	publicStaticVoidMain23
+  h.	23publicStaticVoidMain
+  i.	String
+  j.  int
+4.	Expressions:
+  a.	4 + 5 % 3 * 4 -5
+  b.	4 * (2 + 4) – 3 * 5
+  c.	54 % 10 + 8 * 3 % 9
+  d.	3 * 2 + 4 + “+” + 2 + 3 * 4
+  e.	2.3 * 3 + 19 / 5 / 2 + 6.0 / 5
+5.	Write a program that prints out “Welcome to SI!” 27 times. Make sure you use methods to make 
+your code less redundant: i.e do not print out “Welcome to SI” with 27 println statements.
+6. Write a program that prints out 81 lines. Let "n" be the line you are currently printing out.
+In each line, print out 16 stars, then print out "n" number of exclamations..
+7.	Write a function that calculates the area of a circle. Print out that value. Use 
+a variable for values that could possibly change. (Area = pi*r^2)
