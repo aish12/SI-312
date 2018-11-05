@@ -1,0 +1,33 @@
+Can you change size of Array in Java once created?
+
+Does this compile?
+public static void main(String[] args){
+    int[] arrayWitTen = new int[10];
+
+    int[] arrayWith100 = new int[100];
+    arrayWitTen=arrayWith100;
+}
+      
+1. Write a method named reverseArray. The method will take in an array of ints,
+and when the method completes, the elements in the array will be reversed. 
+This method is void. 
+reverseArray([1, 2, 3, 4, 5]) -> [5, 4, 3, 2, 1]
+
+2. Write a method named findLargestAndSmallest. The method will take in an array
+of ints. At the end of the method, return an array with 2 elements, containing the
+largest int in the array, and the smallest. 
+
+findLargestAndSmallest([1, 20, -3, 80, 2, 5, 1, 7, 4, 2]) -> [-3, 80]
+3. Write a java program to find all pairs of elements in an integer array whose 
+sum is equal to a given number. Return all the pairs in an array. When you find
+a pair, print out the pair using SYstem.out.println. You may not have
+duplicates in the result array.
+
+public static int[] findThePairs(int inputArray[], int inputNumber) {
+
+}
+
+findThePairs(new int[] {4, 6, 5, -10, 8, 5, 20}, 10) -> [4, 6, 5, -10, 20]
+findThePairs(new int[] {4, -5, 9, 11, 25, 13, 12, 8}, 20) -> [-5, 25, 9, 11, 12, 8]
+findThePairs(new int[] {12, 13, 40, 15, 8, 10, -15}, 25) -> [12, 13, 40, -15, 10]
+findThePairs(new int[] {12, 23, 125, 41, -75, 38, 27, 11}, 50) -> [12, 38, 23, 27, 125, 75]
