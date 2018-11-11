@@ -1,0 +1,31 @@
+A. What is row major order?
+
+B. Suppose you have a matrix that looks like this:
+Data: 
+1 2 3 4
+5 6 7 8
+9 0 1 2
+
+This matrix is  represented in java. What will this evaluate to?
+System.out.println(data[0])
+
+What do you want it to print out?
+
+1. Write a print method for a 2d array.
+
+1, 2, 3, 4
+5, 6, 7, 8
+9, 0, 1, 2
+
+2, Write a method that takes in a 2d array. And returns a single array with the max value of each row.
+For the example above, we return [4, 8, 9]
+
+3. Change the previous method so it returns the max of each COLUMN. 
+Example returns [9, 6, 7, 8]
+
+4. Suppose you are given a 3x3 matrix that simulates a tic tac toe board. Write a method that 
+determines whether player X or O has won the game. If neither has won, indicate that with your choice of return value. 
+
+5. Given an array with n-1 elements, the array has numbers 1 to n, but is missing a number. What is the missing number? 
+
+6. Given an array, find the top 2 values in the array.
