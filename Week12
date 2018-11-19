@@ -1,0 +1,73 @@
+1. Write a class that models an image. Images are built as a grid of pixels. Each pixel has an rgb value 
+containing values from 0 to 255 for the red, green and blue colors. 
+
+2. Write a method
+public static boolean isMagic(int[][] a)
+that checks if the array is a magic square. This means that it must be square,
+and that all row sums, all column sums, and the two diagonal-sums must all be equal.
+
+3.  Generate the following spiral pattern.
+
+SIZE = 5
+ 1  2  3  4 5
+16 17 18 19 6
+15 24 25 20 7
+14 23 22 21 8
+13 12 11 10 9
+
+SIZE = 6
+ 1  2  3  4  5 6
+20 21 22 23 24 7
+19 32 33 34 25 8
+18 31 36 35 26 9
+17 30 29 28 27 10
+16 15 14 13 12 11
+
+SIZE = 7
+ 1  2  3  4  5  6 7
+24 25 26 27 28 29 8
+23 40 41 42 43 30 9
+22 39 48 49 44 31 10
+21 38 47 46 45 32 11
+20 37 36 35 34 33 12
+19 18 17 16 15 14 13
+
+4. When a subclass inherits from a superclass, it also inherits its methods; however, 
+it can also override the superclass methods (as well as declare and implement new ones). 
+Consider the following Sports class:
+
+class Sports{
+    String getName(){
+        return "Generic Sports";
+    }
+    void getNumberOfTeamMembers(){
+        System.out.println( "Each team has n players in " + getName() );
+    }
+}
+
+Next, we create a Soccer class that inherits from the Sports class. We can override 
+the getName method and return a different, subclass-specific string:
+
+class Soccer extends Sports{
+    @Override
+    String getName(){
+        return "Soccer Class";
+    }
+}
+
+The parameter(s) and return type of an overridden method must be exactly the same as 
+those of the method inherited from the supertype.
+
+Task 
+Complete the code in your editor by writing an overridden getNumberOfTeamMembers method 
+that prints the same statement as the superclass' getNumberOfTeamMembers method, 
+except that it replaces  with  (the number of players on a Soccer team).
+
+Output Format
+
+When executed, your completed code should print the following:
+
+Generic Sports
+Each team has n players in Generic Sports
+Soccer Class
+Each team has 11 players in Soccer Class
