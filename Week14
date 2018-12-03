@@ -1,0 +1,115 @@
+What is Static vs Dynamic type?
+What are the 3 parts of Object Oriented Programming? Define them.
+What is overriding vs. overloading? What’s a common error made with these two terms?
+
+For questions K - S, consider the following classes and interface:
+public class AcademicClass {
+    private String department;
+    private int students;
+    public AcademicClass(String d, int s) {
+        department = d;
+        students = s;
+  }
+  public void add(int n) { students += n; }
+  public int getStudents() { return students; }
+  public String toString() { return department + getStudents(); }
+}
+public class CrossListed extends AcademicClass {
+  private String otherDepartment;
+  public CrossListed(String d1, String d2) {
+    super(d1, 1);
+    otherDepartment= d2;
+  }
+  public void add(int x) { super.add(x *2); }
+  public String toString() {
+    return otherDepartment + " " + getStudents();
+  }
+}
+public class LabClass extends AcademicClass {
+  private int labHours;
+  public LabClass(String d, int h) {
+    super(d, 0);
+    labHours = h;
+  }
+  public boolean equals(LabClass c) {
+    return this.labHours == c.labHours;
+  }
+} 
+
+public class IndependentStudy extends CrossListed{
+  private int numPapers;
+  public IndependentStudy (String d1, String d2, int n) {
+    super(d1, d2);
+    numPapers = n;
+  }
+  public int getStudents() { return 1; }
+  public int numPages() { return numPapers * 10; }
+}
+
+For questions K through T, refer to the classes defined on the sheet at the back of the test. You may detach that sheet
+for easier reference.
+K. What is output by the following code? _________________________________
+  CrossListed ck = new CrossListed("CS", "M");
+  ck.add(5);
+  System.out.print(ck);
+L. For each line of code write valid if the line will compile without error
+  or invalid if it causes a compile error. (.5 points each)
+  Object obj1 = new AcademicClass("CS", 10); ___________________
+  CrossListed c1 = new LabClass("BIO", 3); ___________________
+N. What is output by the following code? _________________________________
+  AcademicClass an = new CrossListed("CS", "I");
+  an.add(10);
+  System.out.print(an);
+O. What is output by the following client code? _________________________________
+  AcademicClass ao = new AcademicClass("GOV", 20);
+  methodO(ao);
+  System.out.print(ao);
+
+public static void methodO(AcademicClass a) {
+    a.add(10);
+    a.add(a.getStudents());
+}
+P. What is output by the following code? _________________________________
+  AcademicClass ap = new IndependentStudy("HIS", "ECO", 5);
+  ap.add(5);
+  System.out.print(ap);
+Q. What is output by the following code?_________________________________
+  CrossListed cq = new CrossListed("M", "CH");
+  System.out.print(cq instanceof AcademicClass);
+R. What is output by the following code? _________________________________
+  AcademicClass acr = new AcademicClass("CS", 10);
+  LabClass cr1 = new LabClass("PHY", 3);
+  LabClass cr2 = new LabClass("BIO", 3);
+  System.out.print( acr.equals(cr1) + " " + cr1.equals(cr2));
+S. What is output by the following code? _________________________________
+  AcademicClass as = new AcademicClass("HIS", 200);
+  as.add(100);
+  ((CrossListed) as).add(100);
+  System.out.print(as);
+T. What is output by the following code? _______________________________
+  LabClass ct = new LabClass("C", 3);
+  ct.add(25);
+  System.out.print(ct.equals(ct) + " " + ct);
+
+
+Write a Longhorn class that implements the Critter class from assignment 11. 
+Instances of Longhorns return the String "B" in their toString() method. 
+They return the color Color.ORANGE in their getColor() method. When Longhorns 
+fight they randomly choose between SCISSORS and ROCK. When Longhorns move they
+pick a random direction, either NORTH or SOUTH. Initially a Longhorn moves 1 
+step in the random direction. A new direction is then chosen, but the Longhorn 
+moves a total of 2 steps in that direction before picking a new random direction.
+After moving 2 steps the Longhorn picks a new random direction and moves a total 
+of 3 steps in that direction. This continues with the length of a leg increasing
+by 1 each time a new random direction is chosen. The Longhorn constructor takes
+0 parameters. 
+
+public abstract class Critter { 
+  // methods to be implemented 
+  public int fight(String opponent); 
+  public Color getColor(); 
+  public int getMove(CritterInfo info); 
+  public String toString(); 
+  Definitions for NORTH, SOUTH, EAST, WEST, CENTER, 
+  // ROCK, PAPER, and SCISSORS 
+}
