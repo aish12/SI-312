@@ -95,7 +95,7 @@ T. What is output by the following code? _______________________________
 Write a Longhorn class that implements the Critter class from assignment 11. 
 Instances of Longhorns return the String "B" in their toString() method. 
 They return the color Color.ORANGE in their getColor() method. When Longhorns 
-fight they randomly choose between SCISSORS and ROCK. When Longhorns move they
+fight they randomly choose between SCRATCH and ROAR. When Longhorns move they
 pick a random direction, either NORTH or SOUTH. Initially a Longhorn moves 1 
 step in the random direction. A new direction is then chosen, but the Longhorn 
 moves a total of 2 steps in that direction before picking a new random direction.
@@ -106,10 +106,10 @@ by 1 each time a new random direction is chosen. The Longhorn constructor takes
 
 public abstract class Critter { 
   // methods to be implemented 
-  public int fight(String opponent); 
+  public Attack fight(String opponent); 
   public Color getColor(); 
-  public int getMove(CritterInfo info); 
+  public direction getMove(CritterInfo info); 
   public String toString(); 
   Definitions for NORTH, SOUTH, EAST, WEST, CENTER, 
-  // ROCK, PAPER, and SCISSORS 
+  // ROAR, POUNCE  and SCRATCH
 }
